@@ -1,0 +1,147 @@
+html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	header{
+		position: fixed;
+		width: 100%;
+		background-color: #fff;
+		height: 50px;
+		z-index: 1;
+	}
+
+	.menu li{
+		color: white;
+		float: right;
+		list-style: none;
+		padding-left: 30px;
+		float: right;
+		font-family: "Times New Roman";
+	}
+	.menu{
+	        padding-top: 0 px;
+		font-family: KD;
+		font-size: 20px;
+	}
+	.menu a{
+		text-decoration: none;
+		color: green;
+                text-transform: uppercase;
+        font-family: Courier New, monospace;
+        letter-spacing: 5px;
+	}
+.menu a:hover {
+text-shadow: 3px 3px 10px #008000;
+}
+	.menu .menuli{
+		float: left;
+	}
+	.menu .menuli:first-of-type{
+		padding-left: 130px;
+	}
+	.logo{
+		position: absolute;
+		width: 120px;
+		padding-top: 0px; 
+		padding-left: 20px;
+	}
+	@media screen and (max-width : 700px){
+		header img{
+			width: 50px;
+			height: 40px;
+		}
+		.menu {
+        	font-size: 20px;
+    	}
+    	.menu li{
+    		padding-left: 10px;
+    	}
+	}
+	@media screen and (max-width : 600px){
+		header img{
+			width: 40px;
+			height: 35px;
+		}
+		.menu {
+        	font-size: 19px;
+    	}
+    	.menu li{
+    		padding-left: 7px;
+    	}
+    	header{
+    		height: 70px;
+    	}
+	}
+	@media screen and (max-width : 570px){
+		.menu {
+        	font-size: 18px;
+    	}
+    	.menu li{
+    		padding-left: 7px;
+    	}
+	}
+	@media screen and (max-width : 550px){
+		.menu {
+        	font-size: 18px;
+    	}
+    	.menu li{
+    		padding-left: 7px;
+    	}
+	}
+	@media screen and (max-width : 540px){
+		.menu {
+        	font-size: 17px;
+    	}
+    	.menu li{
+    		padding-left: 6.4px;
+    	}
+		header img{
+			width: 35px;
+			height: 30px;
+			margin-left: -10px;
+		}
+		header{
+			height: 60px;
+		}
+		.menu .menuli:first-of-type{
+			padding-left: 90px;
+		}
+	}
+	@media screen and (max-width : 500px){
+		.menu {
+        	font-size: 16px;
+    	}
+    	.menu li{
+    		padding-left: 5.8px;
+    	}
+		header img{
+			width: 35px;
+			height: 30px;
+			margin-left: -10px;
+		}
+		header{
+			height: 60px;
+		}
+		.menu .menuli:first-of-type{
+			padding-left: 90px;
+		}
+	}
+	@media screen and (max-width : 480px){
+		.menu {
+        	font-size: 13.5px;
+    	}
+    	.menu li{
+    		padding-left: 3px;
+    	}
+		header img{
+			width: 35px;
+			height: 30px;
+		}
+		header{
+			height: 60px;
+		}
+		.menu .menuli:first-of-type{
+			padding-left: 100px;
+		}
+	}

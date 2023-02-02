@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> FoodPanda</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Style.css">
+<link rel = "icon" href ="C:\Users\Anuki\Desktop\Internship project\Internship project\new\Images\images.png">
+<style>
+.btn
+{
+        background-color: rgb(63, 36, 104);
+        text-align: center;
+    	color: white;
+    	padding: 15px;
+    	font-size: 12px;
+    	text-transform: uppercase;
+    	width: 130px;
+    	border-radius: 30px;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        background-color: #006400;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+}
+.btn:hover
+{
+  background-color:#00FF00;
+  box-shadow: 0px 15px 20px #008000;
+  color: #fff;
+  transform: translateY(-7px);
+}
+</style>
+
+</head>
+<body>
+<div class="btn">
+		<span onclick="window.location.href='Index.html'"> Home </span>
+</div>
+
+ <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>9</b></span></h4>
+      <p><span href="#">Mexican Potatoes</a> <span class="price">8.50 GEL</span></p>
+      <p><span href="#">Shawarma</a> <span class="price"> 9 GEL</span></p>
+      <p><span href="#">Caesar Salad</a> <span class="price">16.50 GEL</span></p>
+      <p><span href="#">Giant Burger</a> <span class="price">38.65 GEL</span></p>
+      <p><span href="#">Pizza</a> <span class="price">17.50 GEL</span></p>
+      <p><span href="#">Beef Barbecue</a> <span class="price">13.50 GEL</span></p>
+      <p><span href="#">Sushi</a> <span class="price">26 GEL</span></p>
+      <p><span href="#">Khachapuri</a> <span class="price">12 GEL</span></p>
+      <p><span href="#">Khinkali 10 pcs</a> <span class="price">12 GEL</span></p>
+      <hr>
+
+    </div>
+  </div>
+</div>
+
+
+<h2>Checkout Order</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php" autocomplete="off">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Summary</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="name, surname">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="name@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Tbilisi">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Tbilisi">
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="name, surname">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="January">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2023">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+              <div class="col-50">
+              <label for="cvv"> select food:</label>
+<input type="checkbox" id="food" name="phone" value="Mexican Potatoes">
+<label for="food"> Mexican Potatoes </label><br>
+<input type="checkbox" id="food" name="email" value="Shawarma">
+<label for="food"> Shawarma</label><br>
+<input type="checkbox" id="food" name="phone" value="Mexican Potatoes">
+<label for="food"> Caesar Salad </label><br>
+<input type="checkbox" id="food" name="email" value="Shawarma">
+<label for="food"> Giant Burger</label><br>
+<input type="checkbox" id="food" name="phone" value="Mexican Potatoes">
+<label for="food"> Pizza</label><br>
+<input type="checkbox" id="food" name="email" value="Shawarma">
+<label for="food"> Beef Barbecue</label><br>
+<input type="checkbox" id="food" name="email" value="Shawarma">
+<label for="food"> Sushi</label><br>
+<input type="checkbox" id="food" name="email" value="Shawarma">
+<label for="food">Khachapuri</label><br>
+<input type="checkbox" id="food" name="email" value="Shawarma">
+<label for="food">Khinkali 10 pcs</label><br>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+<pre>
+                                                                  <a input type="submit" value="order" class="btn" href="thank.html"> order </a> </pre>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>

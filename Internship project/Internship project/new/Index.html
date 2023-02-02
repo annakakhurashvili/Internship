@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FoodPanda</title>
+	<link rel="stylesheet" href="MainCSS.css">
+<link rel = "icon" href ="C:\Users\Anuki\Desktop\Internship project\Internship project\new\Images\images.png">
+</head>
+<style>
+     html, body{
+    	height: 100%;
+    }
+
+.MainPic{ width: 100%;
+  height: auto;
+}
+.logo
+{
+left: 0px;
+width: 110px;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color:#FFFAF0;
+  color: black;
+}
+	.MidTxt{
+        position: absolute;
+        top: 53%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-shadow: 3px 3px 10px #008000;
+        color: #00000;
+        text-transform: uppercase;
+        font-family: Courier New, monospace;
+        letter-spacing: 5px;
+    }
+    @media screen and (max-width: 800px) 
+    {
+	    .MidTxt
+	    {
+            font-size: 5px;
+        }
+    }
+    .MidTxt h2{
+    	font-size: 21px;
+    	text-transform: uppercase;
+    	font-family: "times new roman";
+    	letter-spacing: 1px;
+    }
+    .MidTxt h2:nth-of-type(2)
+    {
+    	font-family: "times new roman"
+    }
+    .MidTxt .btn{
+    	background-color: rgb(63, 36, 104);
+    	color: white;
+    	padding: 15px;
+    	font-size: 12px;
+    	text-transform: uppercase;
+    	width: 130px;
+    	border-radius: 30px;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        background-color: #006400;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    
+    .MidTxt .btn:nth-of-type(2){
+    	margin-left: 30px;
+    }
+    .MidTxt .btn:hover{
+  background-color:#00FF00;
+  box-shadow: 0px 15px 20px #008000;
+  color: #fff;
+  transform: translateY(-7px);
+    }
+    .MidTxt .btn:active{
+    	background-color: rgba(11, 36, 104, 0.73);
+    }
+
+</style>
+</head>
+<body>
+<header>
+ <a href="Index.html"><img class="logo" src="C:\Users\Anuki\Desktop\Internship project\Internship project\new\Images\images.png"></a>
+	<ul class="menu">
+		<li class="menuli"><a href="Pages/restaurants.html">Restaurants</a></li>
+		<li class="menuli"><a href="Pages/menu.html">menu</a></li>
+		<li style="padding-right: 40px;"><a href="Pages/AboutUs.html">About Us</a></li>
+		<li><a href="Pages/Contacts.html">Contacts</a></li>
+		<li><a href="Index.html">Home</a></li>
+	</ul> 
+</header>
+<img class="MainPic" src="https://previews.123rf.com/images/kesu87/kesu871904/kesu87190400027/120480515-greek-food-background-traditional-different-greek-dishes-top-view-close-up.jpg" >
+<img class="MainPic" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq" >
+<img class="MainPic" src="file:///C:/Users/Anuki/Desktop/Internship%20project/Internship%20project/new/Images/healthy-breakfast-1296x728-header.webp">
+<img class="MainPic" src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,format=auto,quality=50/https://cdn.doordash.com/media/consumer/home/landing/hero/food/mobile_caviar_food.png">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("MainPic");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);
+}
+</script>
+<div class="MidTxt">
+	<h2>"There is no love more sincere than the love of food"</h2>
+	<h2>Fresh cooked food, at your door</h2>
+	<button class="btn" onclick="window.location.href='newform.html'">order food</button>
+	<button class="btn" onclick="window.location.href='Pages/menu.html'">View menu</button>
+</div>
+<footer>
+  <p>Author: Ana kakhurashvili <br>
+  <a href="Index.html">@All rights reserved</a></p>
+</footer>
+
+</body>
+</html>
